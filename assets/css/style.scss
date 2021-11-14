@@ -426,6 +426,37 @@ header{
        }
    }
 }
+.sub-header{
+    width: 100%;
+    padding: 250px 0px 100px 0px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 9;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #fff, $alpha: .5);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h4{
+            color: #000000;
+            font-family: 'bold';
+            font-size: 50px;
+        }
+    }
+}
 /*start about-us*/
 .about-us{
     width: 100%;
@@ -572,6 +603,8 @@ header{
     .team-box{
         width: 100%;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
         position: relative;
         background-color: rgba($color: #c8215d, $alpha: 1);
         border-radius: 10px;
@@ -619,6 +652,56 @@ header{
                 transform: translateX(0);
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+    }
+    .box-data{
+        width: 100%;
+        padding: 20px 15px;
+        background-color: #F1F5F8;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: .1);
+        &:last-child{
+            margin: 0px !important;
+        }
+        .heading{
+            background-color: #fff;
+            padding: 10px 0px;
+        }
+        ul{
+            li{
+                margin-bottom: 20px;
+                padding: 20px 10px;
+                background-color: #fff;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                .date{
+                    padding: 20px 10px;
+                    color: #333;
+                    background-color: #00B5BC;
+                    border-radius: 5px;
+                }
+                .data{
+                    margin-right: 50px;
+                    h4{
+                        color: #0097DB;
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        color: #888;
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin: 0px;
+                    }
+                }
+                &:last-child{
+                    margin: 0px;
+                }
             }
         }
     }

@@ -87,4 +87,7 @@
     .teamwork .team-box .image-content img {
         object-position: center;
     }
+    .sub-header{
+        padding: 140px 0px 100px 0px;
+    }
 }

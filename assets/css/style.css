@@ -599,6 +599,48 @@ header .owl-theme .owl-nav button i {
   font-size: 20px;
 }
 
+.sub-header {
+  width: 100%;
+  padding: 250px 0px 100px 0px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  z-index: 9;
+}
+
+.sub-header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sub-header .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.sub-header .content h4 {
+  color: #000000;
+  font-family: 'bold';
+  font-size: 50px;
+}
+
 /*start about-us*/
 .about-us {
   width: 100%;
@@ -804,6 +846,13 @@ header .owl-theme .owl-nav button i {
 .teamwork .team-box {
   width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   background-color: #c8215d;
   border-radius: 10px;
@@ -869,6 +918,71 @@ header .owl-theme .owl-nav button i {
           transform: translateX(0);
   opacity: 1;
   visibility: visible;
+}
+
+.teamwork .box-data {
+  width: 100%;
+  padding: 20px 15px;
+  background-color: #F1F5F8;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teamwork .box-data:last-child {
+  margin: 0px !important;
+}
+
+.teamwork .box-data .heading {
+  background-color: #fff;
+  padding: 10px 0px;
+}
+
+.teamwork .box-data ul li {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.teamwork .box-data ul li .date {
+  padding: 20px 10px;
+  color: #333;
+  background-color: #00B5BC;
+  border-radius: 5px;
+}
+
+.teamwork .box-data ul li .data {
+  margin-right: 50px;
+}
+
+.teamwork .box-data ul li .data h4 {
+  color: #0097DB;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.teamwork .box-data ul li .data p {
+  color: #888;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.teamwork .box-data ul li:last-child {
+  margin: 0px;
 }
 
 .news {
